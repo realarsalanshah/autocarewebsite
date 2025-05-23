@@ -47,7 +47,34 @@
                             images/logo.png       981w
                         "
                 /></a>
-                <nav role="navigation" class="nav-menu w-nav-menu">
+
+                <style>
+                    .simple-navbar {
+                        display: flex;
+                        justify-content: center;
+                        gap: 30px;
+                        padding: 15px;
+                        background-color: #fff;
+                        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+                        font-family: sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+
+                    .simple-navbar a {
+                        text-decoration: none;
+                        color: #333;
+                    }
+
+                    @media (max-width: 600px) {
+                        .simple-navbar {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        }
+                    }
+                </style>
+                <nav role="navigation" class="simple-navbar>
                     <a href="index.html#home" class="nav-link w-nav-link">Home</a>
                     <a href="results.html" class="nav-link-4 w-nav-link">Gallery</a>
                     <a href="index.html#name" class="nav-link-4 w-nav-link">Contact</a>
